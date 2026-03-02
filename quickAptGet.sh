@@ -17,8 +17,9 @@ apt install -y dpkg \
     yad \
     build-essential
 
-# Text Editor
-apt install -y vim
+# Text Editor and Fonts
+apt install -y vim \
+    fonts-noto
 
 # WM
 apt install -y i3 \
