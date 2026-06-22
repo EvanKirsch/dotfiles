@@ -25,9 +25,9 @@ font pango:JetBrains Mono 8
 # X core fonts rendering does not support right-to-left and this being a bitmap
 # font, it doesn’t scale on retina/hidpi displays.
 
-    bindsym $Mod+Shift+bracketright exec playerctl --player='spotify' previous
-    bindsym $Mod+Shift+bracketleft exec playerctl --player='spotify' next
-    bindsym $Mod+Shift+backslash exec playerctl --player='spotify' play-pause
+bindsym $Mod+Shift+bracketright exec playerctl --player='spotify' previous
+bindsym $Mod+Shift+bracketleft exec playerctl --player='spotify' next
+bindsym $Mod+Shift+backslash exec playerctl --player='spotify' play-pause
 
 #Alias colors
 #set $bg     #2c2c2e

@@ -43,7 +43,7 @@
 (setq org-directory "~/org/")
 
 ;; company autocomplete configuration
-(add-to-list 'company-backends 'company-dabbrev-code)
+;; (add-to-list 'company-backends 'company-dabbrev-code)
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
@@ -76,3 +76,22 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+
+;; Claude plugin configuration
+(use-package! claude-code
+  :hook (doom-first-buffer . claude-code-mode)
+  :config
+
+  (setq claude-code-display-window-fn
+        (lambda (buffer)
+          (display-buffer buffer '((display-buffer-in-side-window)
+                                   (side . left)))))
+  (setq claude-code-terminal-backend 'vterm)
+
+  (map! :leader
+        (:prefix ("C" . "claude")
+         :desc "Start Claude"      "c" #'claude-code
+         :desc "Kill Claude"       "k" #'claude-code-kill
+         :desc "Send region"       "r" #'claude-code-send-region
+         :desc "Send buffer"       "b" #'claude-code-send-buffer
+         :desc "Toggle window"     "t" #'claude-code-toggle)))
