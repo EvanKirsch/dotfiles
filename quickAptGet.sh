@@ -15,18 +15,23 @@ apt install -y dpkg \
     make \
     autoconf \
     yad \
+    cmake \
     build-essential
 
 # Text Editor and Fonts
 apt install -y vim \
     fonts-noto
 
+# Compilers and Interpereters
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh  # Rust Compiler
+apt install -y g++ \
+    python3
+
 # WM
 apt install -y i3 \
     dmenu \
     i3blocks \
     playerctl
-
 
 # Spotify
 curl -sS https://download.spotify.com/debian/pubkey_5384CE82BA52C83A.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg

@@ -8,9 +8,9 @@ firefox &
 spotify &
 
 sleep 2
-i3-msg '[class="Alacritty"] move to workspace 1 ≥'
-i3-msg '[class="Firefox-esr"] move to workspace 3 🌏'
-i3-msg '[class="Spotify"] move to workspace 4 ♫'
+i3-msg '[class="Alacritty"] move to workspace 1'
+i3-msg '[class="Firefox-esr"] move to workspace 3'
+i3-msg '[class="Spotify"] move to workspace 4'
 
 while ["$(hostname -I)" = ""]; do
     sleep 1
@@ -19,4 +19,4 @@ done
 steam &
 
 sleep 8
-i3-msg '[class="Steam"] move to workspace 2 💻'
+i3-msg '[class="Steam"] move to workspace 2'
