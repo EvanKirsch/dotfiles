@@ -208,7 +208,7 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3blocks -c /etc/i3blocks.conf
         mode dock
-	    position top	
+        position top
         bindsym button1 nop
         font pango:monospace 10 
 
@@ -234,5 +234,11 @@ bar {
   }
 }
 
+# Scratchpad terminal
+for_window [instance="scratchpad"] floating enable, resize set 1718 1078, move scratchpad
+bindsym $mod+t [instance="scratchpad"] scratchpad show; [instance="scratchpad"] move position center
+bindsym $mod+Shift+t move scratchpad
+
 # Autostartup
 exec --no-startup-id autostart;
+exec --no-startup-id alacritty --class scratchpad
