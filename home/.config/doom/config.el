@@ -94,4 +94,8 @@
          :desc "Kill Claude"       "k" #'claude-code-kill
          :desc "Send region"       "r" #'claude-code-send-region
          :desc "Send buffer"       "b" #'claude-code-send-buffer
-         :desc "Toggle window"     "t" #'claude-code-toggle)))
+         :desc "Toggle window"     "t" #'claude-code-toggle
+         :desc "Send Claude 1"     "1" #'claude-code-send-1
+         :desc "Send Claude 2"     "2" #'claude-code-send-2
+         :desc "Send Claude 3"     "3" #'claude-code-send-3
+         )))
