@@ -31,5 +31,6 @@ Installed Patches
 - center
 - boarder
 - alpha
+
 [EvanKirsch/demenu](https://github.com/EvanKirsch/dmenu)
 ![demenu](https://github.com/EvanKirsch/dotfiles/blob/master/screenshots/dmenu.jpg)
