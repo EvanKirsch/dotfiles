@@ -49,6 +49,6 @@
 ;; (unpin! t)
 
 ;; add claude package
-(package! claude-code
-  :recipe (:host github :repo "stevemolitor/claude-code.el"
-           :files ("*.el" "icons")))
+;; (package! claude-code
+;;   :recipe (:host github :repo "stevemolitor/claude-code.el"
+;;            :files ("*.el" "icons")))
