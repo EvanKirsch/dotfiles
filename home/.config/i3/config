@@ -236,8 +236,7 @@ bar {
 
 # Scratchpad terminal
 for_window [instance="scratchpad"] floating enable, resize set 1718 1078, move scratchpad
-bindsym $mod+t [instance="scratchpad"] scratchpad show; [instance="scratchpad"] move position center
-bindsym $mod+Shift+t exec --no-startup-id alacritty --class scratchpad;
+bindsym $mod+t exec --no-startup-id toggle-scratchpad
 
 # Autostartup
 exec --no-startup-id autostart;

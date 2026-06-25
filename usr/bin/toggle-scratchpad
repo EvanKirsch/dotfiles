@@ -1,0 +1,6 @@
+#!/bin/bash
+if ! xdotool search --classname scratchpad &>/dev/null; then
+    alacritty --class scratchpad &
+    xdotool search --sync --classname scratchpad &>/dev/null
+fi
+i3-msg '[instance="scratchpad"] scratchpad show; [instance="scratchpad"] move position center'
