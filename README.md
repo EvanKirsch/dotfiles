@@ -1,10 +1,11 @@
-# Scripts to quickly setup a new system
+# :desktop_computer: Scripts to quickly setup a new system
 
-## Install and configure via symlinks
+## :gear: Install 
+### Install and configure via symlinks (Recommended)
 1. run `./quickAptGet.sh` 
 1. run `./symlinkConfigs.sh`
 
-## Install and configure via copying
+### Install and configure via copying
 1. run `./quickAptGet.sh`
 1. run `./pushEtcConfigs.sh`
 1. run `./pushHomeConfigs.sh`
@@ -12,7 +13,7 @@
 
 ---
 
-## Screenshots
+## :framed_picture: Screenshots
 ### Bashrc Highlights
 ```bash
 # fortune piped into cowsay for a cool, smart cow
