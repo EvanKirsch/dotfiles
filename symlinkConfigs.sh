@@ -20,6 +20,6 @@ ln -s $SCRIPT_DIR/home/.config/doom ~/.config/doom
 # i3 configs
 ln -s $SCRIPT_DIR/home/.config/i3 ~/.config/i3
 
-i3 block impls
+# i3 block impls
 ln -s $SCRIPT_DIR/i3blocks/mediaplayer /usr/share/i3blocks/mediaplayer
 ln -s $SCRIPT_DIR/i3blocks/calendar /usr/share/i3blocks/calendar
