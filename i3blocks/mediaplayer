@@ -69,5 +69,5 @@ my $title = qx(playerctl $player_arg metadata title);
 exit(0) if $?;
 push(@metadata, $title) if $title;
 
-chomp (@metadata);
+chomp(@metadata);
 print(' ' . @metadata[0] . ' - ' . $title);
