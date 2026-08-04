@@ -14,6 +14,9 @@
 ---
 
 ## :framed_picture: Screenshots
+### neofetch
+![neofetch](https://github.com/EvanKirsch/dotfiles/blob/master/screenshots/neofetch.jpg)
+
 ### Bashrc Highlights
 ```bash
 # fortune piped into cowsay for a cool, smart cow
