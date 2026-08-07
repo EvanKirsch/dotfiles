@@ -1,0 +1,26 @@
+#!/usr/bin/env sh
+#
+# Displays battery for firstg bluetooth divice
+#
+# Left click: open blueman-manager
+
+case "$BLOCK_BUTTON" in
+    1) i3-msg -q "exec blueman-manager" >/dev/null 2>&1 ;;
+esac
+
+devices=$(bluetoothctl devices | cut -d' ' -f2)
+
+output=""
+for mac in $devices; do
+    info=$(bluetoothctl info "$mac")
+    entry=$(echo "$info" | sed -n 's/^\tBattery Percentage:.*(\(.*\))/\1/p')
+
+    if [ -z "$entry" ]; then
+        output="none"
+    else
+        output="$entry%"
+    fi
+
+done
+
+echo "$output"
