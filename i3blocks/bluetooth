@@ -16,7 +16,8 @@ for mac in $devices; do
     entry=$(echo "$info" | sed -n 's/^\tBattery Percentage:.*(\(.*\))/\1/p')
 
     if [ -z "$entry" ]; then
-        output="none"
+        # non empty output
+        output="-"
     else
         output="$entry%"
     fi
